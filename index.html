@@ -36,6 +36,10 @@
 		<h2 id="textoutput" class="center">Show results here</h2>
 	</div>
 	<script type="text/javascript">
+
+	  var entryButtonHandle = document.getElementById("entrybutton");
+      entryButtonHandle.addEventListener("click", display);
+      
       function message(){
       	/*This to to get the element by ID or i*/
 		var i = document.getelementbyId("entryinput").value;
