@@ -39,18 +39,18 @@
 
 	  var entryButtonHandle = document.getElementById("entrybutton");
       entryButtonHandle.addEventListener("click", display);
-      
+
       function message(){
       	/*This to to get the element by ID or i*/
-		var i = document.getelementbyId("entryinput").value;
+		var i = document.getElementById("entryinput").value;
 		/*This is to get elements by class name, in this instance, it is center.*/
-		var c = document.getelementbyclassname("center");
+		var c = document.getelementyclassname("center");
 		/*second class center is my name: Andy Dimnych*/
 		var n = c[1].textContent;
 		/*Alert box add Andy Dimnych: this is a test*/
 		alert(n+": "+i);
 		/*Generate the output for document*/
-		document.getelementbyId("textoutput").innerHTML = i;}
+		document.getElementById("textoutput").innerHTML = i;}
 	</script>
 </body>
 </html>
