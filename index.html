@@ -36,12 +36,18 @@
 		<h2 id="textoutput" class="center">Show results here</h2>
 	</div>
 	<script type="text/javascript">
-      document.getelementbyId("entrybutton").addEventListener("click", message());
       function message(){
-			var x = document.getelementbyId("entryinput").value;
-			  document.getelementbyId("textoutput").innerHTML = x;
-			  alert("Andy Dimnych: " + x), false);
-		   }
+      	/*This to to get the element by ID or i*/
+		var i = document.getelementbyId("entryinput").value;
+		/*This is to get elements by class name, in this instance, it is center.*/
+		var c = document.getelementbyclassname("center");
+		/*second class center is my name: Andy Dimnych*/
+		var n = c[1].textContent;
+		/*Alert box add Andy Dimnych: this is a test*/
+		alert(n+": "i);
+		/*Generate the output for document*/
+		document.getelementbyId("textoutput").innerHTML = i;
+	}
 	</script>
 </body>
 </html>
